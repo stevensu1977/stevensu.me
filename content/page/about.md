@@ -45,6 +45,6 @@ layout= "about"
      	 //As Cloud CSM 
      	 fmt.Println("\n\n2016~, Enjoy Cloud CSM work in Oracle, keep simple and stupid")
 
-}
+ 	 }
  
  ```
