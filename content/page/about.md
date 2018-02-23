@@ -10,3 +10,41 @@ layout= "about"
   
 
   
+ ```go
+ 
+ 	 package main
+
+ 	 import (
+ 	 	"fmt"
+ 	 )
+
+ 	 var year []int
+
+ 	 func doStomething(year []int, something string){
+     	 fmt.Println("\n")
+     	 fmt.Printf("%s,  %d~%d\n",something ,year[0],year[1])
+ 	 }
+
+ 	 func main() {
+
+     	 //As Chinese/Computer Teacher 
+     	 year=[]int{1999,2005}
+     	 doStomething(year,"Teaching something in middle school")
+
+     	 //As Java Developer
+     	 year=[]int{2005,2007}; 
+     	 doStomething(year,"Devlop something in UISOFT")
+    
+     	 //As Presales
+     	 year=[]int{2007,2013}; 
+     	 doStomething(year,"Presales in BEA/Oracle")
+
+     	 year=[]int{2013,2016}; 
+     	 doStomething(year,"Presales in IBM")
+
+     	 //As Cloud CSM 
+     	 fmt.Println("\n\n2016~, Enjoy Cloud CSM work in Oracle, keep simple and stupid")
+
+}
+ 
+ ```
