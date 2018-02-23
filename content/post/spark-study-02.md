@@ -3,7 +3,6 @@ Categories = ""
 Description = ""
 Tags = ["big data", "Spark"]
 date = "2016-04-10T21:21:14+08:00"
-menu = "main"
 title = "Apache Spark 学习笔记二"
 
 +++

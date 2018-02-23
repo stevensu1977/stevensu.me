@@ -2,7 +2,6 @@
 description = ""
 tags = ["linux", "centos","glusterfs"]
 date = "2016-03-16T22:42:43+08:00"
-menu = "main"
 title = "CentOS7 glusterfs 安装设置"
 
 +++

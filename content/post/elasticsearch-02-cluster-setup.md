@@ -2,7 +2,6 @@
 Description = ""
 tags = ["nosql", "bigdata","document"]
 date = "2016-05-18T21:44:26+08:00"
-menu = "main"
 title = "Elasticsearch - 02 Cluster Setup"
 
 +++

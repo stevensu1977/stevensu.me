@@ -2,7 +2,6 @@
 Description = ""
 tags = ["linux", "centos"]
 date = "2016-03-07T23:06:16+08:00"
-menu = "main"
 title = "CentOS7 重置root密码"
 
 +++

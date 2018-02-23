@@ -3,7 +3,6 @@ Categories = ""
 Description = ""
 tags = ["Development","javascript"]
 date = "2016-07-17T14:11:29+08:00"
-menu = "main"
 title = "Date2string lib"
 
 +++

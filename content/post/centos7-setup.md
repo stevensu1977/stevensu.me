@@ -2,7 +2,6 @@
 description = ""
 tags = ["linux", "centos"]
 date = "2016-02-29T22:42:43+08:00"
-menu = "main"
 title = "CentOS7 安装设置"
 
 +++

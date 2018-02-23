@@ -3,7 +3,6 @@ Categories = ["Development", "GoLang"]
 Description = ""
 Tags = ["Development", "golang"]
 date = "2017-07-17T10:03:45+08:00"
-menu = "main"
 title = "The Go Proramming Language reading notes 02"
 
 +++

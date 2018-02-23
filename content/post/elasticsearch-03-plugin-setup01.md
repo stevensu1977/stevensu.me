@@ -3,7 +3,6 @@ Categories = ["nosql", "elasticsearch"]
 Description = ""
 tags = ["nosql", "elasticsearch"]
 date = "2016-07-12T21:15:22+08:00"
-menu = "main"
 title = "Elasticsearch 插件篇 01"
 
 +++

@@ -2,7 +2,6 @@
 Description = ""
 tags = ["bigdata", "hbase"]
 date = "2016-08-08T22:06:23+08:00"
-menu = "main"
 title = "HBase Store 01"
 
 +++

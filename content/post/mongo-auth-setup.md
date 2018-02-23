@@ -2,7 +2,6 @@
 Description = ""
 tags = ["mongo"]
 date = "2016-03-24T11:08:56+08:00"
-menu = "main"
 title = "Mongo auth setup"
 
 +++

@@ -2,7 +2,6 @@
 Description = ""
 tags = ["HOWTO", "jdk","ubuntu"]
 date = "2016-05-12T22:23:52+08:00"
-menu = "main"
 title = "Install JDK Ubuntu"
 
 +++

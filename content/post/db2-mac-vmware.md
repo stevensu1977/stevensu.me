@@ -2,7 +2,6 @@
 Description = ""
 tags = ["db2", "mac"]
 date = "2016-03-10T12:37:43+08:00"
-menu = "main"
 title = "DB2 Macbook pro VMwareFusion Crash"
 
 +++
