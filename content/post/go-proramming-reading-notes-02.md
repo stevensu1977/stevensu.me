@@ -82,35 +82,36 @@ title = "The Go Proramming Language reading notes 02"
     
   3.http/template
   
-  ```go
+   
+    ```go
   
-   //在模版中,如何在range 里面访问外部参数?
-   //注意  $.CurrentPage, 在range里面如果还要访问外部变量需要使用$
+      //在模版中,如何在range 里面访问外部参数?
+      //注意  $.CurrentPage, 在range里面如果还要访问外部变量需要使用$
   
-    {{range $index,$page := .Page}}
-     <li class="paginate_button {{if (eq $index $.CurrentPage)}} active {{end}}" aria-controls="demo-dt-basic" tabindex="0"><a href="./?page={{$index | add}}">{{$index| add}} </a></li>
-    {{end}}  
+      {{range $index,$page := .Page}}
+        <li class="paginate_button {{if (eq $index $.CurrentPage)}} active {{end}}" aria-controls="demo-dt-basic" tabindex="0"><a href="./?page={{$index | add}}">{{$index| add}} </a></li>
+      {{end}}  
   
-   //在模版里面调用方法
+      //在模版里面调用方法
   
-    {{ $index | add }} 或者 (eq $index $.CurrentPage)
+      {{ $index | add }} 或者 (eq $index $.CurrentPage)
   
-  ```
+    ```
   
  
   4.net/http server 基本使用
   
-  ```
-  //静态网页
-  http.FileServer
+    ```go
+     //静态网页
+     http.FileServer
   	
-  log.Fatal(http.ListenAndServe(":8080", http.FileServer(http.Dir("/var/www"))))
+     log.Fatal(http.ListenAndServe(":8080", http.FileServer(http.Dir("/var/www"))))
   
-  //如果要对路径进行转换
-  http.Handle("/tmpfiles/", http.StripPrefix("/tmpfiles/", http.FileServer(http.Dir("/tmp"))))
+     //如果要对路径进行转换
+     http.Handle("/tmpfiles/", http.StripPrefix("/tmpfiles/", http.FileServer(http.Dir("/tmp"))))
   
-  //其他的动态使用HandleFunc或者Handle添加处理函数和模块
+     //其他的动态使用HandleFunc或者Handle添加处理函数和模块
   
-  ```
+    ```
   
   
