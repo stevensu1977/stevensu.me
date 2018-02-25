@@ -27,7 +27,7 @@ title = "The Go Proramming Language reading notes 02"
    
  2.http包高级用法(client)
  
-    ```go
+   ```go
     //如果要自定义header, basic auth,proxy
     
     //basic auth编码辅助方法,net/http已经自带了SetBasicAuth方法
@@ -77,13 +77,13 @@ title = "The Go Proramming Language reading notes 02"
 	 //处理resp即可
     
     
-    ```
+   ```
    
     
   3.http/template
   
    
-    ```go
+   ```go
   
       //在模版中,如何在range 里面访问外部参数?
       //注意  $.CurrentPage, 在range里面如果还要访问外部变量需要使用$
@@ -96,12 +96,13 @@ title = "The Go Proramming Language reading notes 02"
   
       {{ $index | add }} 或者 (eq $index $.CurrentPage)
   
-    ```
+  ```
   
  
   4.net/http server 基本使用
   
-    ```go
+   ```go
+     
      //静态网页
      http.FileServer
   	
@@ -112,6 +113,6 @@ title = "The Go Proramming Language reading notes 02"
   
      //其他的动态使用HandleFunc或者Handle添加处理函数和模块
   
-    ```
+   ```
   
   
