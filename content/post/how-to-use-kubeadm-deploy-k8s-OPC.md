@@ -1,7 +1,6 @@
 ---
 title: "How to deploy k8s cluster on Oracle Public Cloud through kubeadm"
 author: "Steven Su"
-cover: "/img/cover.jpg"
 tags: ["kubernetes" ]
 date: 2018-02-28T13:05:45+08:00
 draft: false
@@ -15,6 +14,12 @@ draft: false
    1.  Prepare your oracle cloud account and IaaS instance 
 
     You can select OCI or OCI classic, 2 types IaaS, please use Oracle enterprise linux 7 (UERK4) image , I create 3 three instance , every one with 1 OCPU/7.5GB Memory.
+    
+    ```bash
+     sudo hostnamectl set-hostname cloud-nodeXX
+     sudo vi /etc/hosts #add hostname to hosts
+    
+    ```
     
     cloud-node04 (k8s master)
     cloud-node05 (k8s node)
@@ -37,6 +42,14 @@ draft: false
        
        yum install docker-engine
        yum install kubeadm
+       
+       systemctl start docker
+       systemctl status docker
+       
+       #安装完毕之后docker无法通过systemctl 启动, 需要重启启动节点
+       #Error getting authority: Error initializing authority: Error calling StartServiceByName for org.freedesktop.PolicyKit1: Timeout was reached (g-io-error-quark, 24)
+       #Failed to start docker.service: 连接超时
+		#See system logs and 'systemctl status docker.service' for details.
      ``` 
      
    3. You need container-registry.oracle.com
@@ -54,7 +67,7 @@ Error response from daemon: repository container-registry.oracle.com/kubernetes/
 
       ```bash
       #on cloud-node04 (k8s master)
-      kubeadm-setup up
+      kubeadm-setup.sh up
       
       #if everything is ok , you get follow this ,
       
