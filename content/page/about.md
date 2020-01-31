@@ -43,9 +43,12 @@ layout= "about"
      	 year=[]int{2013,2016}; 
      	 doStomething(year,"Presales in IBM")
 
-     	 //As Cloud CSM 
-     	 fmt.Println("\n\n2016~, Enjoy Cloud CSM work in Oracle, keep simple and stupid")
-
+     	 year=[]int{2016,2019}; 
+     	 doStomething(year,"Cloud CSM in Oracle")
+       
+     	 //As AWS SA
+     	 fmt.Println("\n\n2019~, Enjoy SA  in AWS, keep simple and stupid!")
+   
  	 }
  
  ```
